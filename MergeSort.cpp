@@ -36,17 +36,10 @@ int main() {
 	for(int i=0; i<n; ++i)
 		a[i]=n-i;
 
-	cout << "Before: ";
-	for(int i=0; i<n; ++i)
-		cout << a[i] << ' ';
-	cout << "\n\n";
-
 	merge_sort(0, n-1);
 
-	cout << "After: ";
 	for(int i=0; i<n; ++i)
 		cout << a[i] << ' ';
-	cout << "\n\n";
 
 	return 0;
 }
